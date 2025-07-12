@@ -12,8 +12,9 @@ export default function Projects() {
         <li>ScribbleScore</li>
         <li>Facial Recognition Door Lock</li>
       </ul>
-      <p><a href="/" className="text-blue-600 underline">
-      Go back home</a></p>
+      <Link href="/" style={{ color: "blue", textDecoration: "underline" }}>
+        Back to home
+      </Link>
     </div>
   );
 }
