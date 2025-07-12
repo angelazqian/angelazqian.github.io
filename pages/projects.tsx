@@ -9,8 +9,8 @@ export default function Projects() {
         <li>Project One</li>
         <li>Project Two</li>
       </ul>
-      <Link legacyBehavior href="/">
-        <a style={{ color: "blue", textDecoration: "underline" }}>Back to home</a>
+      <Link href="/" style={{ color: "blue", textDecoration: "underline" }}>
+        Back to home
       </Link>
     </div>
   );

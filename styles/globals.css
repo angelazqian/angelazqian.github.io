@@ -5,7 +5,19 @@
   --background: #ffffff;
   --foreground: #121621;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/InterVariable.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/InterVariable-Italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -21,6 +33,7 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   background: var(--background);
   color: var(--foreground);
 }
@@ -34,14 +47,4 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.custom-underline::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background-color: #880000;
 }
