@@ -3,16 +3,28 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <div style={{ maxWidth: "600px", margin: "2rem auto", fontFamily: "sans-serif" }}>
-      <h1>Projects</h1>
-      <p>Here&apos;s a list of some things I&apos;ve made</p>
-      <ul>
-        <li>2048 AI Player</li>
-        <li>Eyesore</li>
-        <li>Easy Mode 2048</li>
-        <li>ScribbleScore</li>
-        <li>Facial Recognition Door Lock</li>
+      <h1 className="text-white text-7xl font-bold mb-[20px] mt-[120px] underline" style={{ textDecorationColor: '#880000' }}>projects</h1>
+      <ul className="text-3xl text-white">
+        <li>
+          <Link href="/">My website!</Link>
+        </li>
+        <li>
+          <Link href="/2048-AI">2048 AI Player</Link>
+        </li>
+        <li>
+          <Link href="/eyesore">Eyesore</Link>
+        </li>
+        <li>
+          <Link href="/EasyMode-2048">Easy Mode 2048</Link>
+        </li>
+        <li>
+          ScribbleScore
+        </li>
+        <li>
+          Facial Recognition Door Lock
+        </li>
       </ul>
-      <Link href="/" style={{ color: "blue", textDecoration: "underline" }}>
+      <Link href="/">
         Back to home
       </Link>
     </div>

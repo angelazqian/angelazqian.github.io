@@ -28,7 +28,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #121621;
-    --foreground: #ededed;
+    --foreground: #d2d5da;;
   }
 }
 
@@ -46,5 +46,10 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: #d2d5da;
+}
+
+a {
   color: white;
+  text-decoration: underline;
 }
