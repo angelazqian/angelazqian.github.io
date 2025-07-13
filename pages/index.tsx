@@ -7,17 +7,19 @@ export default function Home() {
     <div className="App h-screen overflow-hidden">
       <header className='App-header -mt-[30px]'>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-        <div className="max-w-[600px] mx-auto text-left">
-          <div className="flex items-center mb-[-10px]">
-            <h1 className="font-bold text-7xl underline text-white" style={{ textDecorationColor: '#880000' }} >angela qian</h1>
-            <img src="https://avatars.githubusercontent.com/u/107577606" className="w-[140px] h-[140px] rounded-full object-cover relative top-[-20px] ml-[30px]" alt="avatar"/>
+        <div className="w-[650px] h-[350px] bg-black rounded-3xl mx-auto flex items-center justify-center">
+          <div className="w-[600px] mr-[15px] mt-[10px] mx-auto text-left">
+            <div className="flex items-center mb-[-10px]">
+              <h1 className="font-bold text-7xl underline text-white" style={{ textDecorationColor: '#880000' }} >angela qian</h1>
+              <img src="https://avatars.githubusercontent.com/u/107577606" className="w-[140px] h-[140px] rounded-full object-cover relative top-[-20px] ml-[30px]" alt="avatar"/>
+            </div>
+            <p className="text-lg mb-[10px]">I am a junior at Purdue University pursuing a major in Computer Science and a minor in Mathematics. </p>
+            <p className="text-lg mb-[10px]">In my free time, you can catch me drawing, reading, or playing piano.</p>
+            <p className="text-lg">My resume can be found {' '}
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  here</a>.
+            </p>
           </div>
-          <p className="text-lg mb-[10px]">I am a junior at Purdue University pursuing a major in Computer Science and a minor in Mathematics. </p>
-          <p className="text-lg mb-[10px]">In my free time, you can catch me drawing, reading, or playing piano.</p>
-          <p className="text-lg">My resume can be found {' '}
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                here</a>.
-          </p>
         </div>
       </header>
 
