@@ -18,10 +18,10 @@ export default function ConwayBackground() {
     canvas.height = rows * cellSize;
 
     const draw = () => {
-      ctx.fillStyle = '#000000';
+      ctx.fillStyle = '#030b1f';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = '#444444';
+      ctx.fillStyle = '#2d3240';
       for (let y = 0; y < rows; y++) {
         for (let x = 0; x < cols; x++) {
           if (grid[y][x]) {

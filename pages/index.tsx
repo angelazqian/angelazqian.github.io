@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <><ConwayBackground />
     <div className="App h-screen overflow-hidden">
-      <header className='App-header -mt-[30px]'>
+      <header className='App-header -mt-[20px]'>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-        <div className="w-[650px] h-[350px] bg-[#121621] rounded-3xl mx-auto flex items-center justify-center">
+        <div className="w-[650px] h-[350px] bg-[#000000] rounded-3xl mx-auto flex items-center justify-center">
           <div className="w-[600px] mr-[15px] mt-[10px] mx-auto text-left">
             <div className="flex items-center mb-[-10px]">
               <h1 className="font-bold text-7xl underline text-white" style={{ textDecorationColor: '#880000' }}>angela qian</h1>
