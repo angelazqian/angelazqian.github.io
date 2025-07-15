@@ -9,7 +9,7 @@ export default function ConwayBackground() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const cellSize = 8;
+    const cellSize = 6;
     const rows = Math.floor(window.innerHeight / cellSize);
     const cols = Math.floor(window.innerWidth / cellSize);
     let grid = Array.from({ length: rows }, () => Array.from({ length: cols }, () => Math.round(Math.random())));

@@ -18,6 +18,13 @@
   font-weight: 300;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: 300;
+  font-style: bold;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
