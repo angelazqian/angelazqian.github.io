@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import ConwayBackground from '../../components/conwaybackground';
+import ConwayBackground from '../components/conwaybackground';
 
 type ProjectPageProps = {
     content: string;
@@ -34,7 +34,7 @@ export default function ProjectPage({ content, data }: ProjectPageProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const files = fs.readdirSync('markdown/projects');
+  const files = fs.readdirSync('markdown');
   const paths = files.map((filename) => ({
     params: {
       slug: filename.replace('.md', ''),
@@ -47,7 +47,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const filePath = path.join('markdown/projects', `${params!.slug}.md`);
+  const filePath = path.join('markdown', `${params!.slug}.md`);
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(fileContent);
   const processedContent = await remark().use(html).process(content);
