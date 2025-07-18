@@ -15,20 +15,18 @@ type ProjectPageProps = {
     };
 };
 
-export default function ProjectPage({ content, data }: ProjectPageProps) {
+export default function ProjectPage({ content }: ProjectPageProps) {
   return (
     <><ConwayBackground/>
-    <div className="fixed top-0 bottom-0 left-1/2 -translate-x-1/2 w-[750px] bg-black z-0" />
     <div className="relative min-h-screen flex justify-center items-start">
-        <div className="max-w-3xl mx-auto p-8 absolute top-0 bottom-0 w-[700px] bg-black">
-            <h1 className="text-4xl font-bold mb-4">{data.title}</h1>
-            <article className="prose prose-lg prose-invert z-5
+        <div className="absolute w-[700px] bg-black top-[60px] bottom-[60px] rounded-3xl z-0" />
+            <article className="prose prose-lg prose-invert relative z-5 w-[600px]
+                        mt-[100px] mb-[100px]
                         [&_h1]:text-6xl [&_h1]:underline [&_h1]:decoration-[#880000]
                         [&_*]:mt-0 [&_*]:mb-[5px] [&_h1]:mb-[15px]
                         [&_h1_a]:font-bold [&_h2_a]:font-bold">
                 <div dangerouslySetInnerHTML={{ __html: content }} />
             </article>
-        </div>
     </div></>
   );
 }
