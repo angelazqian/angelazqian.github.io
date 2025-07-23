@@ -19,12 +19,13 @@ export default function ProjectPage({ content }: ProjectPageProps) {
   return (
     <><ConwayBackground/>
     <div className="relative min-h-screen flex justify-center items-start">
-        <div className="absolute w-[700px] bg-black top-[60px] bottom-[60px] rounded-3xl z-0" />
-            <article className="prose prose-lg prose-invert relative z-5 w-[600px]
+        <div className="absolute w-[900px] bg-black top-[60px] bottom-[60px] rounded-3xl z-0" />
+            <article className="prose prose-lg prose-invert relative z-5 w-[800px]
                         mt-[100px] mb-[100px]
                         [&_h1]:text-6xl [&_h1]:underline [&_h1]:decoration-[#880000]
-                        [&_*]:mt-0 [&_*]:mb-[5px] [&_h1]:mb-[15px]
-                        [&_h1_a]:font-bold [&_h2_a]:font-bold">
+                        [&_*]:mt-0 [&_*]:mb-[10px] [&_h1]:mb-[20px]
+                        [&_h1_a]:font-bold [&_h2_a]:font-bold
+                        [&_p]:leading-tight">
                 <div dangerouslySetInnerHTML={{ __html: content }} />
             </article>
     </div></>
