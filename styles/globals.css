@@ -11,7 +11,15 @@
   font-weight: 400;
   font-style: normal;
 }
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:last-of-type::after {
+  content: none !important;
+}
 
+.prose blockquote::before,
+.prose blockquote::after {
+  content: none !important;  
+}
 @font-face {
   font-family: 'Inter';
   src: url('./fonts/InterVariable-Italic.ttf') format('truetype');

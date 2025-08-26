@@ -24,6 +24,8 @@ export default function ProjectPage({ content }: ProjectPageProps) {
                         mt-[100px] mb-[100px]
                         [&_h1]:text-6xl [&_h1]:underline [&_h1]:decoration-[#880000]
                         [&_*]:mt-0 [&_*]:mb-[5px] [&_h1]:mb-[15px]
+                        [&_blockquote]:not-italic [&_blockquote_p]:not-italic
+                        [&_blockquote]:font-normal [&_blockquote_p]:font-normal
                         [&_h1_a]:font-bold [&_h2_a]:font-bold">
                 <div dangerouslySetInnerHTML={{ __html: content }} />
             </article>
