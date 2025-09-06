@@ -1,5 +1,6 @@
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import { FaEnvelope, FaArtstation} from 'react-icons/fa6';
+// import { FaEnvelope, FaArtstation} from 'react-icons/fa6';
+import { FaEnvelope} from 'react-icons/fa6';
 import ConwayBackground from '../components/conwaybackground';
 
 export default function Home() {
@@ -38,9 +39,9 @@ export default function Home() {
           <a href="https://scholar.google.com/citations?user=N9x8yXoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-inherit transition-transform duration-150 hover:scale-125">
             <i className="ai ai-google-scholar text-[55px] inline-block align-middle mr-[-10px] leading-none"></i>
           </a>
-          <a href="https://toaster_drips.artstation.com/" target="_blank" rel="noopener noreferrer" className="text-inherit transition-transform duration-150 hover:scale-125">
+          {/* <a href="https://toaster_drips.artstation.com/" target="_blank" rel="noopener noreferrer" className="text-inherit transition-transform duration-150 hover:scale-125">
             <FaArtstation />
-          </a>
+          </a> */}
         </div>
       </footer>
     </div></>
