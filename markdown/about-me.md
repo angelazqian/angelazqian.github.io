@@ -2,7 +2,7 @@
 
 Ah.  
 Oh jeez.  
-You want to know more about me? (⊙⸝⸝⸝⊙ )  
+You want to know more about me? (o⸝⸝⸝o )  
 
 Hi!!! I'm Angela! As of writing this (Dec 2025), I'm 20! I speak both English and Mandarin Chinese, and I think computers are pretty neat!
 
