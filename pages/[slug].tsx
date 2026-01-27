@@ -65,7 +65,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const filePath = path.join('markdown', `${params!.slug}.md`);
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(fileContent);
-  const processedContent = await remark().use(html).process(content);
+  const processedContent = await remark().use(html, { sanitize: false }).process(content);
   return {
     props: {
       content: processedContent.toString(),

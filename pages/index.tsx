@@ -203,7 +203,7 @@ const disappearLetters = ({ text, setText, duration = 1500 }: DisappearLettersPa
                 {'< '}
               </a>
               <a href="https://ring.purduehackers.com/" className={`text-white no-underline hover:text-gray-300 transition-colors ${!webring[1] ? 'hidden' : ''}`}>
-                <img src="/phacker.svg" alt="Purdue Hackers webring" className="h-8 inline-block" />
+                <img src="/phacker.svg" alt="Purdue Hackers webring" className="h-10 inline-block" />
               </a>
               <a href="https://ring.purduehackers.com/next" className={`text-white no-underline hover:text-gray-300 transition-colors ${!webring[2] ? 'hidden' : ''}`}>
                 {' >'}
