@@ -13,7 +13,7 @@
 ##### July 2025 - Present
 > The website you are looking at right now! Originally created to force myself to learn Next.js and TailwindCSS. I really should be updating this more often, but alas.
 
-<!-- >[Github Repo](https://github.com/angelazqian/angelazqian.github.io) -->
+>[Github Repo](https://github.com/angelazqian/angelazqian.github.io)
 
 
 ## [Eyesore](https://angelazqian.github.io/eyesore)
