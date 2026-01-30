@@ -21,7 +21,7 @@ export default function Home() {
   const [webring, setWebring] = useState([true, true, true]);
 
   const [name, setName] = useState("angela qian");
-  const [text1, setText1] = useState("I am a junior at Purdue University pursuing a major in Computer Science and a minor in Mathematics.");
+  const [text1, setText1] = useState("I am a junior at Purdue University pursuing a double major in Computer Science and Mathematics.");
   const [text2, setText2] = useState("In my free time, you can catch me working on personal projects, going on long walks, drawing on my tablet, or playing piano.");
   const [text3, setText3] = useState("My resume can be found ");
   const [resume, setResume] = useState("here");
@@ -171,7 +171,7 @@ const disappearLetters = ({ text, setText, duration = 1500 }: DisappearLettersPa
         <div className="App h-screen overflow-hidden">
           <header className='App-header'>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-            <div className={`fixed w-[650px] h-[375px] bg-[#000000] mt-[20px] rounded-3xl mx-auto flex items-center justify-center ${!elementsVisible.header ? 'hidden' : ''}`}>
+            <div className={`fixed w-[650px] h-[375px] bg-[#000000] mt-[10px] rounded-3xl mx-auto flex items-center justify-center ${!elementsVisible.header ? 'hidden' : ''}`}>
               <div className="w-[600px] mr-[15px] mt-[10px] mx-auto text-left">
                 <div className="flex items-center mb-[-10px]">
                   <h1 className="font-bold text-7xl underline text-white" style={{ textDecorationColor: '#880000' }}>{name}</h1>

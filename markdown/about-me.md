@@ -4,7 +4,7 @@ Ah.
 Oh jeez.  
 You want to know more about me? (o⸝⸝⸝o )  
 
-<Image class="float-right" width=260 src="/selfportrait.png" style="margin-right: -15px; margin-left: 10px; margin-top: -160px; margin-bottom: 10px"/>
+<Image class="float-right" width=260 src="/selfportrait.webp" style="margin-right: -15px; margin-left: 10px; margin-top: -160px; margin-bottom: 10px"/>
 
 Hi!!! I'm Angela! As of writing this (December 2025), I'm 20! I speak both English and Mandarin Chinese, and I think computers are pretty neat!
 
