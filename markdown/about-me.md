@@ -6,15 +6,15 @@ You want to know more about me? (o⸝⸝⸝o )
 
 <Image class="float-right" width=260 src="/selfportrait.webp" style="margin-right: -15px; margin-left: 10px; margin-top: -160px; margin-bottom: 10px"/>
 
-Hi!!! I'm Angela! As of writing this (December 2025), I'm 20! I speak both English and Mandarin Chinese, and I think computers are pretty neat!
+Hello!!! I'm Angela! As of writing this (August 2026), I'm 20! I speak both English and Mandarin Chinese, and I think computers are pretty neat!
 
 ## FAQ:
 
 ### Any pets?
-I have two cats! One named Floof and one named Douglas. Though I rarely actually call them that, since I tend to refer them by their Chinese nicknames, 灰灰 and 斑斑.
+I have two cats, one named Floof and one named Douglas. Though I rarely actually call them that, since I tend to refer them by their Chinese nicknames, 灰灰 and 斑斑.
 
 ### Play any video games?
-I actually don't play games that much. But! I do play a rhythm game called Cytus II. It's like osu!, but on mobile instead of on a computer.
+I'm really into rhythm games! The ones I play the most are Maimai DX and Cytus II. Maimai is that one arcade game that looks like a giant washing machine, and Cytus II is like osu!, but on mobile instead of on a computer. I also occasionally play Maplestory.
 
 ### Hobbies?
 I like to draw, play piano, go on long walks, and do personal projects!

@@ -21,8 +21,8 @@ export default function Home() {
   const [webring, setWebring] = useState([true, true, true]);
 
   const [name, setName] = useState("angela qian");
-  const [text1, setText1] = useState("I am a junior at Purdue University pursuing a double major in Computer Science and Mathematics.");
-  const [text2, setText2] = useState("In my free time, you can catch me working on personal projects, going on long walks, drawing on my tablet, or playing piano.");
+  const [text1, setText1] = useState("I am a senior at Purdue University pursuing a double major in Computer Science and Mathematics.");
+  const [text2, setText2] = useState("In my free time, you can catch me working on personal projects, going on long walks, playing rhythm games, or drawing.");
   const [text3, setText3] = useState("My resume can be found ");
   const [resume, setResume] = useState("here");
 
