@@ -32,16 +32,17 @@ export default function ProjectPage({ content }: ProjectPageProps) {
       </Head>
       <ConwayBackground/>
       <div className="relative min-h-screen flex justify-center items-start">
-          <div className="absolute w-[900px] bg-black top-[60px] bottom-[60px] rounded-3xl z-0" />
-              <article className="prose prose-lg prose-invert relative z-5 w-[800px]
-                          mt-[100px] mb-[100px]
-                          [&_h1]:text-6xl [&_h1]:underline [&_h1]:decoration-[#880000]
+          <div className="absolute w-[900px] max-[650px]:w-[92vw] bg-black top-[60px] max-[650px]:top-[30px] bottom-[60px] rounded-3xl z-0" />
+              <article className="prose prose-lg prose-invert relative z-5 w-[800px] max-[650px]:w-[82vw] max-[650px]:prose-sm
+                          mt-[100px] max-[650px]:mt-[55px] mb-[100px]
+                          [&_h1]:text-6xl max-[650px]:[&_h1]:text-4xl [&_h1]:underline [&_h1]:decoration-[#880000]
                           [&_*]:mt-0 [&_*]:mb-[10px] [&_h1]:mb-[20px]
                           [&_h1_a]:font-bold [&_h2_a]:font-bold
                           [&_blockquote]:font-normal [&_blockquote_p]:font-normal
                           [&_p]:leading-tight
+                          [&_pre]:overflow-x-auto [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden
                           [&_.katex]:my-0 [&_.katex-html]:my-0 [&_.katex-display]:my-0 [&_span.katex]:my-0
-                          [&_img]:mx-auto [&_img]:block [&_img]:mt-[15px] [&_img]:mb-[15px] [&_img]:rounded-lg">
+                          [&_img]:mx-auto [&_img]:block [&_img]:max-w-full [&_img]:h-auto [&_img]:mt-[15px] [&_img]:mb-[15px] [&_img]:rounded-lg">
                   <div dangerouslySetInnerHTML={{ __html: content }} />
               </article>
       </div>

@@ -1,12 +1,12 @@
 # About Me!
 
+<Image class="float-right" width=260 src="/selfportrait.webp" style="margin-right: -15px; margin-left: 10px; margin-bottom: 10px;"/>
+
 Ah.  
 Oh jeez.  
 You want to know more about me? (o⸝⸝⸝o )  
 
-<Image class="float-right" width=260 src="/selfportrait.webp" style="margin-right: -15px; margin-left: 10px; margin-top: -160px; margin-bottom: 10px"/>
-
-Hello!!! I'm Angela! As of writing this (August 2026), I'm 20! I speak both English and Mandarin Chinese, and I think computers are pretty neat!
+Hello!!! I'm Angela! As of writing this (September 2026), I'm 21! I speak both English and Mandarin Chinese, and I think computers are pretty neat!
 
 ## FAQ:
 

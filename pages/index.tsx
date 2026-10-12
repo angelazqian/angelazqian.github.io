@@ -132,15 +132,26 @@ const disappearLetters = ({ text, setText, duration = 1500 }: DisappearLettersPa
     return () => clearInterval(blinkInterval);
   }, [blinkingEnabled]);
 
+  useEffect(() => {
+    const prevHtml = document.documentElement.style.overflow;
+    const prevBody = document.body.style.overflow;
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.documentElement.style.overflow = prevHtml;
+      document.body.style.overflow = prevBody;
+    };
+  }, []);
+
   if (show404) {
     return (
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="min-h-screen bg-black text-white flex items-center justify-center px-4">
         <div className="text-center">
-          <h1 className="text-9xl font-bold mb-4">404</h1>
-          <p className="text-2xl mb-2">Page Not Found</p>
-          <p className="text-xl text-gray-200">The requested resource could not be found.</p>
-          <p className="text-lg text-gray-300 mt-1">Maybe you clicked something weird... </p>
-          <p className="text-lg text-gray-300">Try <span className="text-gray-300 cursor-pointer underline" onClick={() => window.location.reload()}>refreshing the page</span>?</p>
+          <h1 className="text-9xl max-[650px]:text-7xl font-bold mb-4">404</h1>
+          <p className="text-2xl max-[650px]:text-xl mb-2">Page Not Found</p>
+          <p className="text-xl max-[650px]:text-base text-gray-200">The requested resource could not be found.</p>
+          <p className="text-lg max-[650px]:text-sm text-gray-300 mt-1">Maybe you clicked something weird... </p>
+          <p className="text-lg max-[650px]:text-sm text-gray-300">Try <span className="text-gray-300 cursor-pointer underline" onClick={() => window.location.reload()}>refreshing the page</span>?</p>
         </div>
       </div>
     );
@@ -149,19 +160,19 @@ const disappearLetters = ({ text, setText, duration = 1500 }: DisappearLettersPa
   return (
     <>
       <ConwayBackground />
-      <div className="fixed top-0 left-0 right-0 h-[60px] bg-black z-10 flex items-center justify-between px-6">
+      <div className="fixed top-0 left-0 right-0 h-[60px] max-[650px]:h-[48px] bg-black z-10 flex items-center justify-between px-6 max-[650px]:px-3">
         <a 
-          className="font-mono text-white no-underline cursor-pointer"
+          className="font-mono text-white no-underline cursor-pointer max-[650px]:text-xs max-[650px]:truncate max-[650px]:max-w-[55%]"
           onClick={handleTerminalClick}
         >
           {terminalText}
           <span className={cursorVisible ? 'opacity-100' : 'opacity-0'}>█</span>
         </a>
-        <div className="flex gap-6">
-          <Link href="/about-me" className="text-white no-underline hover:text-gray-300 transition-colors text-xl">
+        <div className="flex gap-6 max-[650px]:gap-3 shrink-0">
+          <Link href="/about-me" className="text-white no-underline hover:text-gray-300 transition-colors text-xl max-[650px]:text-sm">
             About Me
           </Link>
-          <Link href="/projects" className="text-white no-underline hover:text-gray-300 transition-colors text-xl">
+          <Link href="/projects" className="text-white no-underline hover:text-gray-300 transition-colors text-xl max-[650px]:text-sm">
             Projects
           </Link>
         </div>
@@ -171,19 +182,19 @@ const disappearLetters = ({ text, setText, duration = 1500 }: DisappearLettersPa
         <div className="App h-screen overflow-hidden">
           <header className='App-header'>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-            <div className={`fixed w-[650px] h-[375px] bg-[#000000] mt-[10px] rounded-3xl mx-auto flex items-center justify-center ${!elementsVisible.header ? 'hidden' : ''}`}>
-              <div className="w-[600px] mr-[15px] mt-[10px] mx-auto text-left">
-                <div className="flex items-center mb-[-10px]">
-                  <h1 className="font-bold text-7xl underline text-white" style={{ textDecorationColor: '#880000' }}>{name}</h1>
-                  <img src="/pfp.jpg" className={`w-[140px] h-[140px] rounded-full object-cover relative top-[-20px] ml-[30px] ${!elementsVisible.pfp ? 'hidden' : ''}`} alt="avatar"/>
+            <div className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-[56%] w-[650px] h-[375px] max-[650px]:w-[92vw] max-[650px]:h-auto max-[650px]:py-6 bg-[#000000] rounded-3xl flex items-center justify-center ${!elementsVisible.header ? 'hidden' : ''}`}>
+              <div className="w-[600px] max-[650px]:w-[85vw] mr-[15px] max-[650px]:mr-0 mt-[10px] mx-auto text-left">
+                <div className="flex items-center mb-[-10px] max-[650px]:mb-2">
+                  <h1 className="font-bold text-7xl max-[650px]:text-4xl underline text-white" style={{ textDecorationColor: '#880000' }}>{name}</h1>
+                  <img src="/pfp.jpg" className={`w-[140px] h-[140px] max-[650px]:w-[70px] max-[650px]:h-[70px] rounded-full object-cover relative top-[-20px] max-[650px]:top-0 ml-[30px] max-[650px]:ml-3 shrink-0 ${!elementsVisible.pfp ? 'hidden' : ''}`} alt="avatar"/>
                 </div>
-                <p className="text-lg mb-[10px]">
+                <p className="text-lg max-[650px]:text-sm mb-[10px]">
                   {text1}
                 </p>
-                <p className="text-lg mb-[10px]">
+                <p className="text-lg max-[650px]:text-sm mb-[10px]">
                   {text2}
                 </p>
-                <p className="text-lg">
+                <p className="text-lg max-[650px]:text-sm">
                   {text3}
                   {text3.length > 0 && (
                     <>
@@ -198,19 +209,19 @@ const disappearLetters = ({ text, setText, duration = 1500 }: DisappearLettersPa
           </header>
 
           <footer className="App-footer">
-            <div className={`fixed bottom-28 justify-center flex gap-4 items-center mt-[10px] text-2xl font-mono ${!elementsVisible.footer ? 'hidden' : ''}`}>
+            <div className={`fixed bottom-28 max-[650px]:bottom-24 justify-center flex gap-4 items-center mt-[10px] text-2xl max-[650px]:text-lg font-mono ${!elementsVisible.footer ? 'hidden' : ''}`}>
               <a href="https://ring.purduehackers.com/previous" className={`text-white no-underline hover:text-gray-300 transition-colors ${!webring[0] ? 'hidden' : ''}`}>
                 {'< '}
               </a>
               <a href="https://ring.purduehackers.com/" className={`text-white no-underline hover:text-gray-300 transition-colors ${!webring[1] ? 'hidden' : ''}`}>
-                <img src="/phacker.svg" alt="Purdue Hackers webring" className="h-10 inline-block" />
+                <img src="/phacker.svg" alt="Purdue Hackers webring" className="h-10 max-[650px]:h-7 inline-block" />
               </a>
               <a href="https://ring.purduehackers.com/next" className={`text-white no-underline hover:text-gray-300 transition-colors ${!webring[2] ? 'hidden' : ''}`}>
                 {' >'}
               </a>
             </div>
             
-            <div className={`fixed bottom-10 flex gap-10 justify-center items-center mt-[10px] ${!elementsVisible.footer ? 'hidden' : ''}`}>
+            <div className={`fixed bottom-10 max-[650px]:bottom-8 flex gap-10 max-[650px]:gap-6 justify-center items-center mt-[10px] max-[650px]:scale-75 max-[650px]:origin-bottom ${!elementsVisible.footer ? 'hidden' : ''}`}>
               <a 
                 href="https://github.com/angelazqian" 
                 target="_blank" 

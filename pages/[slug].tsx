@@ -26,21 +26,28 @@ export default function ProjectPage({ content }: ProjectPageProps) {
 
   return (
     <><ConwayBackground/>
-    <div className="absolute top-0px left-0 right-0 h-[60px] bg-black z-10 flex items-center px-6">
-      <Link href="/" className="font-mono text-white no-underline">
+    <div className="fixed top-0px left-0 right-0 h-[60px] max-[650px]:h-[48px] bg-black z-10 flex items-center px-6 max-[650px]:px-3">
+      <Link href="/" className="font-mono text-white no-underline max-[650px]:text-xs max-[650px]:truncate">
         home@angelazqian:~/{slug}$ cd ../ █
       </Link>
     </div>
     <div className="relative min-h-screen flex justify-center items-start">
-        <div className="absolute w-[700px] bg-black top-[120px] bottom-[60px] rounded-3xl z-0" />
-            <article className="prose prose-lg prose-invert relative z-5 w-[600px]
-                        mt-[160px] mb-[100px]
+        <div className="absolute w-[700px] max-[650px]:w-[92vw] bg-black top-[120px] max-[650px]:top-[70px] bottom-[60px] rounded-3xl z-0" />
+            <article className="prose prose-lg prose-invert relative z-5 w-[600px] max-[650px]:w-[82vw] max-[650px]:prose-sm
+                        mt-[160px] max-[650px]:mt-[95px] mb-[100px]
                         [&_p]:mb-[10px]
-                        [&_h1]:text-6xl [&_h1]:underline [&_h1]:decoration-[#880000]
+                        [&_h1]:text-6xl max-[650px]:[&_h1]:text-4xl [&_h1]:underline [&_h1]:decoration-[#880000]
                         [&_*]:mt-0 [&_*]:mb-[5px] [&_h1]:mb-[15px]
                         [&_blockquote]:not-italic [&_blockquote_p]:not-italic
                         [&_blockquote]:font-normal [&_blockquote_p]:font-normal
                         [&_blockquote]:text-gray-300
+                        [&_img]:max-w-full [&_img]:h-auto
+                        [&_.float-right]:!mt-[-55px]
+                        max-[650px]:[&_.float-right]:!w-[45%]
+                        max-[650px]:[&_.float-right]:!mt-[-20px]
+                        max-[650px]:[&_.float-right]:!mr-0
+                        max-[650px]:[&_.float-right]:!ml-3
+                        max-[650px]:[&_.float-right]:!mb-1
                         [&_h1_a]:font-bold [&_h2_a]:font-bold">
                 <div dangerouslySetInnerHTML={{ __html: content }} />
             </article>
